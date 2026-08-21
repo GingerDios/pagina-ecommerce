@@ -17,7 +17,7 @@ for(let i=0;i<lista.length;i++){
             let producto = document.createElement('div');
             producto.classList.add('producto');
             let img = document.createElement('div');
-            img.classList.add('img');
+            img.classList.add('img0');
             let desc = document.createElement('div');
             desc.classList.add('desc');
             let title = document.createElement('p');
@@ -47,15 +47,16 @@ for(let i=0;i<lista.length;i++){
 
             total += 3000;
         break;
+        /*
         case '1':
             let precio = document.createElement('p');
 
-            precio.textContent= 'Coca cola 50ml - $800';
+            precio.textContent= 'Coca cola 500ml - $800';
 
             let producto = document.createElement('div');
             producto.classList.add('producto');
             let img = document.createElement('div');
-            img.classList.add('img');
+            img.classList.add('img1');
             let desc = document.createElement('div');
             desc.classList.add('desc');
             let title = document.createElement('p');
@@ -88,7 +89,7 @@ for(let i=0;i<lista.length;i++){
         case '0':
             let precio = document.createElement('p');
 
-            precio.textContent= 'Coca cola 3L - $3000';
+            precio.textContent= 'Pepsi 500ml - $3000';
 
             let producto = document.createElement('div');
             producto.classList.add('producto');
@@ -161,6 +162,7 @@ for(let i=0;i<lista.length;i++){
 
             total += 3000;
         break;
+        */
     }
     console.log(i);
     areaTotal.textContent = 'Total: ' + total;
