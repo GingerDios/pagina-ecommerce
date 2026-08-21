@@ -158,9 +158,11 @@ body,html{
 
 .lista{
     min-height: 40vh;
+    height: fit-content;
     width: 110vh;
     border-radius: 2vh;
     background:  linear-gradient(to top,rgba(91, 95, 104, 0.7),rgba(128, 128, 128, 0.4));
+    padding: 1vh;
 }
 
 
@@ -311,4 +313,26 @@ a{
 a:hover{
     text-decoration: underline;
     
+}
+
+@media(max-width:768px){
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+    }
+
+    .producto{
+        width: 50vh;
+    }
+    .lista{
+        width: 55vh;
+        height: fit-content;
+    }
+    
+    .detalles{
+        margin-top: 20vh;
+        width: 50vh;
+    }
+
 }
