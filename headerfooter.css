@@ -2,7 +2,20 @@ body,html{
     padding: 0;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(fondogaseosa.png);
+    background-size: cover;
+    
 }
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 
 .navbar{
     width: 100%;
@@ -16,7 +29,7 @@ body,html{
     font-weight: bolder;
     font-size: 1.25em;
     
-    background: linear-gradient(to right,darkred,red,darkred);
+    background: linear-gradient(to right,rgb(0, 139, 134),rgb(42, 74, 255),rgb(71, 142, 155));
     background-size: cover; 
     
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -26,13 +39,23 @@ body,html{
     margin-left: 5vh;
     height: 8vh;
     width: 20vh;
-    background-color: red;
-    border-radius: 3vh;
+    background-color: rgb(61, 95, 123);
+    
+    border-radius: 1vh;
     
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow: hidden;
 }
+
+.logo img{
+    height:20vh;
+
+}
+
+
 .espacio{
     overflow: hidden;
     max-width: 40%;
@@ -97,9 +120,9 @@ body,html{
 .buscar{
     height: 8vh;
     width: 8vh;
-    background-color: rgb(106, 121, 120);
+    background-color: rgb(187, 255, 250);
     margin-right: 5vh;
-    border-radius: 1vh;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,121 +160,51 @@ body,html{
 }
 
 
-.menu{
-    min-height: 80vh;
-    height: fit-content;
-    max-width: 100%;
-    width: 100%;
-    
+/*footer*/
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 
-    background-image: url(fondogaseosa.png);
-    background-size: cover;
-    background-repeat:repeat-y;
-    
-    
-}
+footer {
 
-.masvendidos{
-    display: flex;
-    margin:3vh;
-    align-items: center;
-    font-size: 4vh;
     color: white;
-    font-weight: bolder;
-}
-
-.separador{
-    height: 15vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-}
-.separador img{
-    height: 25vh;
-    margin-left: 3vh;
-}
-/*producto*/
-.producto{
-    height: 50vh;
-    width: 40vh;
-    background:  linear-gradient(to top,rgba(91, 95, 104, 0.7),rgba(128, 128, 128, 0.4));
-    border-radius: 1vh;
-    margin: 4vh;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2vh;
-    transition: .3s;
-}
-.producto:hover{
-    scale: 102%;
-    transition: .3s;
-}
-
-.prodimg{
-    height: 25vh;
-    width: 25vh;
-    background-color: aliceblue;
-    border-radius: 2vh;
-    overflow: hidden;
-}
-.prodimg img{
-    height: 100%;
-    width: 100%;
-}
-
-.texto{
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(to right,rgb(27, 0, 50),rgb(4, 20, 112),rgb(6, 0, 45));
+    width: 96.7%;
     height: 20vh;
-    width: 35vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2vh;
-    color: white;
-    font-weight: bold;
-    
-    padding: 1vh;
+
+}
+.footer-contenido{
+    width: 90vw;
+    height: 20vh;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2vw;
 }
 
-
-
-.comprar{
-    border: 4px solid rgb(65, 88, 65);
-    background-color: rgb(187, 208, 155);
-    color: green;
-    height: 5vh;
-    width: 20vh;
-    border-radius: 1vh;
-    font-size: 2vh;
+.footer-contenido h2 {
+    margin: 0;
+    font-size: 28px;
 }
-.comprar:hover{
-    background-color: rgb(136, 171, 82);
-    scale: 105%;
-}
-/*    */
 
-a{
+.footer-contenido p {
+    margin: 8px 0;
+}
+
+.footer-links {
+    margin: 15px 0;
+}
+
+.footer-links a {
     color: white;
     text-decoration: none;
+    margin: 0 10px;
 }
-a:hover{
+
+.footer-links a:hover {
     text-decoration: underline;
-    
 }
 
-
-
-
-/*footer*/
-footer{
-    background:linear-gradient(to bottom,rgb(82, 14, 0),rgb(32, 0, 0));
-    width: 100%;
-    height: 30vh;
+.copyright {
+    font-size: 13px;
 }

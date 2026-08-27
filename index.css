@@ -1,0 +1,200 @@
+body,html{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/*   */
+
+.contenido{
+    min-height: 80vh;
+    height: fit-content;
+    width: 93vw;
+    padding: 3vw;
+    background-image: url(fondogaseosa.png);
+    background-size: cover;
+    background-repeat:repeat-y;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.presentacion{
+    width: 60vw;
+    height: 24vh;
+    
+    background: linear-gradient(to right,rgb(0, 139, 134),rgb(42, 74, 255),rgb(71, 142, 155));
+    border-radius: 1vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    
+    transition: .5s;
+    overflow: hidden;
+    margin-bottom: 5vh;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.presentacion:hover{
+
+    transform: translateX(-4vh);
+    transition: .5s;
+}
+.presentacionPrincipal{
+    width: 80vw;
+    height: 60vh;
+    
+    background: linear-gradient(to right,rgb(0, 139, 134),rgb(42, 74, 255),rgb(71, 142, 155));
+    border-radius: 1vh;
+    color: white;
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    transition: .5s;
+    overflow: hidden;
+    margin-bottom: 5vh;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.presentacionPrincipal:hover{
+
+    transform: translateY(2vh);
+    scale: 102%;
+    transition: .5s;
+}
+.presentacionPrincipal p{
+    width: fit-content;
+    font-size: 3vh;
+}
+.presentacionPrincipal .title{
+    font-size: 5vh;
+}
+
+.presentacionPrincipal .content{
+    height: 20vh;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+    
+}
+
+
+.content{
+    height: 20vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    
+    
+}
+
+.title{
+    font-size: 4vh;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+p{
+    font-size: 2vh;
+}
+
+.imgc{
+    height: 24vh;
+    width: 40%;
+    transition: .8s;
+    background-color: blanchedalmond;
+    background-size: 70vh;
+
+
+}
+
+@keyframes presimgD{
+    0%{
+        transform: translateX(50vh);
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    transform: translateX(0);
+    }
+}
+@keyframes presimgI{
+    0%{
+        transform: translateX(-50vh);
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    transform: translateX(0);
+    }
+}
+
+
+.presentacionPrincipal .imgc{
+    height: 100%;
+    
+}
+.imgc1 img{
+    height: 125%;
+    transition: .8s;
+    
+
+    animation-name: presimgD;
+    animation-duration: 1s;
+    
+}
+
+.imgc2 img{
+    height: 125%;
+    transition: .8s;
+    
+
+    animation-name: presimgI;
+    animation-duration: 1s;
+    
+}
+
+.imgc img:hover{
+    scale: 105%;
+    transition: .8s;
+}
+    
+
+
+.img:hover{
+    background-color: blanchedalmond;
+    width: 70%;
+
+background-position-x: 0vh;
+    transition: .8s;
+    opacity: 100%;
+
+}
+
+/*    */
+
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+a:hover{
+    text-decoration: underline;
+    
+}
+
+
+
+

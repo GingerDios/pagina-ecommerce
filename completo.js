@@ -3,11 +3,11 @@ let carritoContenido = localStorage.getItem('comprado');
 
 carritoContenido = carritoContenido.replace(/ ,/g,'');
 console.log(carritoContenido);
-const detalles = document.querySelector('.precios');
+
 const areaTotal = document.querySelector('.total');
 const list = document.querySelector('.lista');
 const carritoCompras = document.querySelector('#compras');
-
+const preciofinal = document.querySelector('#preciofinal');
 let creado =false;
 let lista = [];
 
@@ -16,13 +16,7 @@ lista = carritoContenido.split(',');
 
 console.log(lista);
 
-if(lista[0]!=' '){
-var compras=lista.length;
-carritoCompras.textContent=compras;
-}else{
-    var compras = 0;
-    
-}
+
 
 for(let i=0;i<lista.length;i++){
     let posi = i;
@@ -47,7 +41,7 @@ for(let i=0;i<lista.length;i++){
             producto.classList.add('producto');
 
 producto.classList.add('producto');
-cantidad.textContent='Amount: 1' ;
+cantidad.textContent='amount: 1' ;
 desc.classList.add('desc');
 
 
@@ -171,31 +165,11 @@ desc.classList.add('desc');
         break;
       
     }
-
+    total += precioprod;
     /* */
 
-    if(creado==true){
-price.textContent = 'precio: $' + precioprod;
-    
-    botonEliminar.addEventListener('click',()=>{
-        
-        console.log(posi);
-        producto.remove();
-        precio.remove();
-        lista[posi]=' ';
-        posi=i;
-        console.log(posi)
-        
-        localStorage.setItem('comprado',lista);
-        console.log('borrado: ' +i + '     ' + lista);
-        total-=precioprod;
-        
-        compras-=1;
-        console.log(compras);
-        carritoCompras.textContent=compras;
-        areaTotal.textContent = 'Total: ' + total;
-    });
-    detalles.appendChild(precio);
+   
+
             list.appendChild(producto);
             producto.appendChild(img);
             producto.appendChild(desc);
@@ -204,15 +178,17 @@ price.textContent = 'precio: $' + precioprod;
             desc.appendChild(price);
             producto.appendChild(botones);
             botones.appendChild(botonEliminar);
+            preciofinal.textContent = 'Total: $' + total;
+
+            
 
 
 
-    total+=precioprod;
-
-    areaTotal.textContent = 'Total: ' + total;
+   
 }
-    creado =false;
-}
+localStorage.setItem('comprado','');
+
+
 
 
 
