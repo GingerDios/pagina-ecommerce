@@ -13,18 +13,18 @@ if (carritoCompras) {
     carritoCompras.textContent = listaCarrito.length;
 }
 
-buscado.textContent = 'Resultados para la busqueda: ' + busquedaGuardada;
+buscado.textContent = 'Results for the search: ' + busquedaGuardada;
 
 
 const catalogo = [
     
-    { id: '5', nombre: 'Coca cola - 1L', precio: 1500, img: 'productos/coca1l.webp' },
-    { id: '6', nombre: 'Coca cola - 3L', precio: 800, img: 'productos/coca3l.jpg' },
-    { id: '7', nombre: 'Coca cola - Lata', precio: 800, img: 'productos/cocalata.jpg' },
-    { id: '8', nombre: 'Pepsi - 500ml', precio: 800, img: 'productos/pepsi500ml.webp' },
-    { id: '9', nombre: 'Pepsi - 1L', precio: 800, img: 'productos/pepsi1l.jpg' },
-    { id: '10', nombre: 'Pepsi - 3L', precio: 800, img: 'productos/pepsi3l.jpg' },
-    { id: '11', nombre: 'Pepsi - Lata', precio: 800, img: 'productos/pepsilata.jpg' }
+    { id: '5', nombre: 'Coca cola - 1L', cost: 1500, img: 'productos/coca1l.webp' },
+    { id: '6', nombre: 'Coca cola - 3L', cost: 800, img: 'productos/coca3l.jpg' },
+    { id: '7', nombre: 'Coca cola - Lata', cost: 800, img: 'productos/cocalata.jpg' },
+    { id: '8', nombre: 'Pepsi - 500ml', cost: 800, img: 'productos/pepsi500ml.webp' },
+    { id: '9', nombre: 'Pepsi - 1L', cost: 800, img: 'productos/pepsi1l.jpg' },
+    { id: '10', nombre: 'Pepsi - 3L', cost: 800, img: 'productos/pepsi3l.jpg' },
+    { id: '11', nombre: 'Pepsi - Lata', cost: 800, img: 'productos/pepsilata.jpg' }
 ];
 
 
@@ -58,7 +58,7 @@ for (let i = 0; i < catalogo.length; i++) {
         title.textContent = prod.nombre;
 
         let desc = document.createElement('p');
-        desc.textContent = 'precio: $' + prod.precio;
+        desc.textContent = 'cost: $' + prod.cost;
 
         texto.appendChild(title);
         texto.appendChild(desc);
